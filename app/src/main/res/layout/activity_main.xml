@@ -9,19 +9,27 @@
 
     <TextView
         android:layout_marginTop="20dp"
-        android:id="@+id/title"
+        android:id="@+id/title2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/judul"
+        android:text="@string/judul2"
         android:textAlignment="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
         />
 
-    <fragment
-        android:id="@+id/fragment"
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:name="com.example.hondapcx.FragmentHonda"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_honda"/>
+        tools:layout="@layout/fragment_honda" />
+
+    <Button
+        android:id="@+id/info_button"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Kelebihan"
+        android:background="@drawable/rounded"/>
 
 </LinearLayout>
